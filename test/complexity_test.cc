@@ -81,10 +81,10 @@ ADD_COMPLEXITY_CASES(big_o_1_test_name, rms_o_1_test_name, lambda_big_o_1);
 // --------------------------- Testing BigO O(N) --------------------------- //
 // ========================================================================= //
 
-std::vector<int64_t> ConstructRandomVector(int64_t size) {
-  std::vector<int64_t> v;
-  v.reserve(size);
-  for (int64_t i = 0; i < size; ++i) {
+std::vector<int> ConstructRandomVector(int64_t size) {
+  std::vector<int> v;
+  v.reserve(static_cast<int>(size));
+  for (int i = 0; i < size; ++i) {
     v.push_back(std::rand() % size);
   }
   return v;
